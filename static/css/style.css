@@ -1,0 +1,73 @@
+:root {}
+
+/* space-grotesk-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/static/fonts/space-grotesk-v16-latin-regular.woff2") format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h1, h2 {
+    font-family: Space Grotesk;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px; /* 118.182% */
+    letter-spacing: -1.76px;
+}
+p {
+    font-family: Space Grotesk;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+}
+
+.wrapper, .sectionCard {
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.sectionCard--BigPadding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.sectionCard--SmallPadding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.sectionCard-heading {
+
+}
+.sectionCard-text {
+}
+
+section button {
+    width: 100%;
+    margin: 48px, 0;
+}
+
+.u-hidden {
+    display: none;
+}
+
+ul.u-reset,
+ul.u-reset li,
+ul.u-reset ul li {
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    list-style-type: none;
+}
