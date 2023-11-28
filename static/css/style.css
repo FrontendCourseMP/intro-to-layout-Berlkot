@@ -1,6 +1,7 @@
 :root {
     font-size: 62.5%;
     --color-dark-blue: #1a1e42;
+    --color-light-blue: #2A2D51;
     --color-dark-blue-faded: rgb(26, 30, 66, 0.80);
     --color-bold-orange: #F7931A;
     --color-bold-green: #00B67A;
@@ -78,9 +79,13 @@ h3 {
 }
 
 summary {
+    margin-top: 8px;
     list-style: none;
-    width: auto;
     margin-right: 24px;
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
 }
 
 button,
@@ -88,17 +93,8 @@ input[type=button] {
     border: 0;
 }
 
-summary::-webkit-details-marker {
-    display: none;
-}
-
-summary::after {
-    content: "+";
-}
-
-details[open] summary::after {
-    content: "-";
-
+input[type=button] {
+    margin-top: 12px;
 }
 
 hgroup p {
@@ -106,15 +102,17 @@ hgroup p {
 }
 
 .external-anchor {
+    display: block;
     color: var(--color-bold-orange);
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin-top: 16px;
 }
 
 .wrapper,
-.sectionCard,
-#getInTouch,
-#contactForm {
-    display: flex;
-    flex-direction: column;
+.sectionCard {
     max-width: 390px;
     margin: 0 auto;
     padding: 0 16px;
@@ -153,6 +151,7 @@ a.sectionCard-Button {
     width: 100%;
     color: white;
     padding: 10px 24px;
+    margin-top: 48px;
 }
 
 .sectionCard-Button--Orange {
@@ -163,6 +162,19 @@ a.sectionCard-Button {
     background-color: var(--color-bold-green);
 }
 
+.heading {
+    color: var(--color-dark-blue);
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -1.92px;
+    margin-bottom: 24px;
+}
+.heading-orange {
+    color: var(--color-bold-orange);
+}
+
 .button--Orange {
     width: 100%;
     color: white;
@@ -171,6 +183,13 @@ a.sectionCard-Button {
 
 .menu {
     padding: 18px 16px;
+}
+
+.mostRecovered {
+    margin-top: 48px;
+}
+.sectionCard-largeParagraph {
+    margin-top: 32px;
 }
 
 #getInTouch,
@@ -198,14 +217,37 @@ a.sectionCard-Button {
     border-radius: 8px;
     padding: 16px 6px;
 }
+.faq li {
+    margin-top: 32px;
+}
 
 .u-hidden {
     display: none;
 }
 
+.cardList-blackCard {
+    padding: 32px;
+    background-color: var(--color-light-blue);
+    border-radius: 8px;
+}
+.cardList-blackCard p {
+    margin-top: 12px;
+}
+.cardList-blackCard h3 {
+    margin-top: 24px;
+}
+.cardList-transparentCard {
+    margin-top: 24px;
+}
+.cardList-transparentCard p {
+    margin-top: 12px;
+}
+
 ol,
 ol li {
     margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 ul,
@@ -214,4 +256,8 @@ ul li {
     padding: 0;
     text-indent: 0;
     list-style-type: none;
+}
+
+.cardList li{
+    margin-top: 24px;
 }
