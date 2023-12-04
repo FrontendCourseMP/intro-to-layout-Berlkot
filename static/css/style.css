@@ -5,6 +5,7 @@
     --color-dark-blue-faded: rgb(26, 30, 66, 0.80);
     --color-bold-orange: #F7931A;
     --color-bold-green: #00B67A;
+    --color-grey-600: #475467;
     --color-grey-500: #667085;
     --color-grey-400: #98A2B3;
     --color-grey-300: #D0D5DD;
@@ -97,7 +98,7 @@ input[type=button] {
     margin-top: 12px;
 }
 
-hgroup p {
+h2 + p {
     margin-top: 16px;
 }
 
@@ -112,7 +113,7 @@ hgroup p {
 }
 
 .wrapper,
-.sectionCard {
+.sectionCard, .footerSection {
     max-width: 390px;
     margin: 0 auto;
     padding: 0 16px;
@@ -148,12 +149,32 @@ a.sectionCard-Button {
 
 .sectionCard-Button {
     text-align: center;
+    border-radius: 4px; 
     width: 100%;
     color: white;
     padding: 10px 24px;
     margin-top: 48px;
 }
+.ourPromice {
+    padding-top: 48px;
+}
+.ourPromice h2 {
+    margin-bottom: 48px;
+}
+.ourProcess, .ourProcess h2 + p {
+    padding-bottom: 48px;
+}
+.testimonials {
+    background-color: var(--color-grey-100);
+}
 
+.testimonials h2 {
+    text-align: center;
+}
+.testimonials .subheader {
+    text-align: center;
+    margin-bottom: 45px;
+}
 .sectionCard-Button--Orange {
     background-color: var(--color-bold-orange);
 }
@@ -161,6 +182,28 @@ a.sectionCard-Button {
 .sectionCard-Button--Green {
     background-color: var(--color-bold-green);
 }
+
+.footerSection {
+    padding: 32px 16px;
+}
+.footerSection-navigation p {
+    margin-bottom: 24px;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.footerSection-navigation ul li {
+    margin-top: 16px;
+}
+.footer-bottom {
+    margin-top: 32px;
+}
+
+.trustpilot {
+    margin: 24px 0 40px 0;
+}
+
 
 .heading {
     color: var(--color-dark-blue);
@@ -192,8 +235,8 @@ a.sectionCard-Button {
     margin-top: 32px;
 }
 
-#getInTouch,
-#contactForm {
+.getInTouch,
+.contactForm {
     border-radius: 8px;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -201,8 +244,49 @@ a.sectionCard-Button {
     color: white;
     padding: 32px 24px;
 }
+.getInTouch {
+    color: var(--color-grey-300);
+}
+.getInTouch h2 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    line-height: 52px;
+    color: white;
+    margin-bottom: 16px;
+}
+.getInTouch p {
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 32px;
+}
+.getInTouch ul li {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 32px;
+    margin-top: 24px;
+}
+.blog h2, .blog .subheader{
+    text-align: center;
+}
 
-#contactForm p {
+.startNow .startNow-text{
+    color: var(--color-dark-blue-faded);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+.startNow ul li {
+    color: var(--color-dark-blue-faded);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; 
+    margin-top: 26px;
+}
+
+.contactForm p {
 
     font-size: 2.3rem;
     line-height: 30px;
@@ -219,6 +303,21 @@ a.sectionCard-Button {
 }
 .faq li {
     margin-top: 32px;
+}
+.faq h2 {
+    text-align: center;
+}
+.usefulLinks li {
+    color: var(--color-grey-600);
+    margin-right: 16px;
+}
+.footerSection-navigation-list li {
+    color: var(--color-grey-600);
+}
+
+.footer-copy {
+    margin: 24px 0;
+    color: var(--color-grey-400)
 }
 
 .u-hidden {
@@ -242,6 +341,24 @@ a.sectionCard-Button {
 .cardList-transparentCard p {
     margin-top: 12px;
 }
+.cardList-whiteCard {
+    border-radius: 8px; 
+    padding: 24px;
+    background-color: white;
+}
+.cardList-whiteCard ul {
+    margin-bottom: 24px;
+}
+.cardList-whiteCard .whiteCard-text {
+    margin-bottom: 20px;
+    color: var(--color-grey-500);
+}
+.cardList-whiteCard .whiteCard-author {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
 
 ol,
 ol li {
@@ -256,6 +373,9 @@ ul li {
     padding: 0;
     text-indent: 0;
     list-style-type: none;
+}
+.u-inline li {
+    display: inline;
 }
 
 .cardList li{
