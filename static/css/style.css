@@ -43,6 +43,7 @@
 }
 
 body {
+    counter-reset: listc;
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.5rem;
     background-color: white;
@@ -92,6 +93,8 @@ summary {
 button,
 input[type=button] {
     border: 0;
+    cursor: pointer;
+    background-color: white;
 }
 
 input[type=button] {
@@ -102,6 +105,19 @@ h2 + p {
     margin-top: 16px;
 }
 
+.checkmarkList li {
+    background: url("/static/images/check-circle.svg") left top no-repeat;
+    padding-left: 37px
+}
+
+.articleItem .articleItem-image {
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+.articleItem .articleItem-avatar {
+    border-radius: 50%;
+}
+
 .external-anchor {
     display: block;
     color: var(--color-bold-orange);
@@ -110,17 +126,45 @@ h2 + p {
     font-weight: 600;
     line-height: 28px;
     margin-top: 16px;
+    
 }
-
+.external-anchor img {
+    vertical-align: baseline;
+    margin-left: 8px;
+}
+.aboutUsImage {
+    margin-top: 48px;
+    /*
+    No way i can do this without div cluttering or complicating existing things
+    It will be never used ever again i swear
+    */
+    margin-left: -16px;
+    max-width: auto;
+}
 .wrapper,
 .sectionCard, .footerSection {
     max-width: 390px;
     margin: 0 auto;
     padding: 0 16px;
 }
+.enumaratedCardList {
+    counter-reset: listc;
+    
+}
+
+.enumaratedCardList li::before {
+    display: inline-block;
+    counter-increment: listc;
+    content: "0" counter(listc);
+    background-color: var(--color-light-blue);
+    padding: 12px 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
 
 .sectionCard {
-    gap: 48px;
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -138,10 +182,26 @@ h2 + p {
     background-color: var(--color-dark-blue);
     color: white;
 }
-
 .sectionCard--Dark p {
     color: white;
 }
+.sectionCard--hasTopEllipce {
+    background-image:  url("/static/images/Ellipse_top.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.sectionCard--hasBottomEllipce {
+    background-image:  url("/static/images/Ellipse_bottom.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.sectionCard--hasBothEllipce {
+    background-image:  url("/static/images/Ellipse_bottom.png"), url("/static/images/Ellipse_top.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right bottom, left top;
+}
+
+
 
 a.sectionCard-Button {
     display: block;
@@ -171,9 +231,13 @@ a.sectionCard-Button {
 .testimonials h2 {
     text-align: center;
 }
-.testimonials .subheader {
+.subheader {
     text-align: center;
     margin-bottom: 45px;
+}
+.testimonials a.sectionCard-Button--Green img {
+    vertical-align: middle;
+    margin-left: 8px;
 }
 .sectionCard-Button--Orange {
     background-color: var(--color-bold-orange);
@@ -234,6 +298,9 @@ a.sectionCard-Button {
 .sectionCard-largeParagraph {
     margin-top: 32px;
 }
+.whiteCard-stars {
+    margin-bottom: 24px;
+}
 
 .getInTouch,
 .contactForm {
@@ -245,6 +312,7 @@ a.sectionCard-Button {
     padding: 32px 24px;
 }
 .getInTouch {
+    background-position: 0 325px, 0 -290px;
     color: var(--color-grey-300);
 }
 .getInTouch h2 {
@@ -253,6 +321,14 @@ a.sectionCard-Button {
     line-height: 52px;
     color: white;
     margin-bottom: 16px;
+}
+.getInTouch .contactFace {
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+.getInTouch ul li img {
+    margin-right: 10px;
+    vertical-align: middle;
 }
 .getInTouch p {
     font-size: 2.1rem;
@@ -283,11 +359,11 @@ a.sectionCard-Button {
     font-style: normal;
     font-weight: 400;
     line-height: 26px; 
-    margin-top: 26px;
+    margin-top: 16px;
 }
 
 .contactForm p {
-
+    color: white;
     font-size: 2.3rem;
     line-height: 30px;
     text-align: center;
@@ -314,12 +390,23 @@ a.sectionCard-Button {
 .footerSection-navigation-list li {
     color: var(--color-grey-600);
 }
+.footer-sponsors li:first-child {
+    margin-right: 40px;
+}
 
 .footer-copy {
     margin: 24px 0;
     color: var(--color-grey-400)
 }
-
+.heroImg {
+    margin: 21px 50px;
+}
+.top-sponsors li {
+    margin-top: 12px;
+}
+.top-sponsors li:first-child {
+    margin-top: 0;
+}
 .u-hidden {
     display: none;
 }
