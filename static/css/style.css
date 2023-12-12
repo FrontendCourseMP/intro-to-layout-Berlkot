@@ -63,7 +63,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
-h2, h3 {
+
+h2,
+h3 {
     margin: 0;
 }
 
@@ -101,7 +103,7 @@ input[type=button] {
     margin-top: 12px;
 }
 
-h2 + p {
+h2+p {
     margin-top: 16px;
 }
 
@@ -114,6 +116,7 @@ h2 + p {
     border-radius: 8px;
     margin-bottom: 24px;
 }
+
 .articleItem .articleItem-avatar {
     border-radius: 50%;
 }
@@ -126,12 +129,14 @@ h2 + p {
     font-weight: 600;
     line-height: 28px;
     margin-top: 16px;
-    
+
 }
+
 .external-anchor img {
     vertical-align: baseline;
     margin-left: 8px;
 }
+
 .aboutUsImage {
     margin-top: 48px;
     /*
@@ -141,15 +146,18 @@ h2 + p {
     margin-left: -16px;
     max-width: auto;
 }
+
 .wrapper,
-.sectionCard, .footerSection {
+.sectionCard,
+.footerSection {
     max-width: 390px;
     margin: 0 auto;
     padding: 0 16px;
 }
+
 .enumaratedCardList {
     counter-reset: listc;
-    
+
 }
 
 .enumaratedCardList li::before {
@@ -182,21 +190,25 @@ h2 + p {
     background-color: var(--color-dark-blue);
     color: white;
 }
+
 .sectionCard--Dark p {
     color: white;
 }
+
 .sectionCard--hasTopEllipce {
-    background-image:  url("/static/images/Ellipse_top.png");
+    background-image: url("/static/images/Ellipse_top.png");
     background-repeat: no-repeat;
     background-position: left top;
 }
+
 .sectionCard--hasBottomEllipce {
-    background-image:  url("/static/images/Ellipse_bottom.png");
+    background-image: url("/static/images/Ellipse_bottom.png");
     background-repeat: no-repeat;
     background-position: right bottom;
 }
+
 .sectionCard--hasBothEllipce {
-    background-image:  url("/static/images/Ellipse_bottom.png"), url("/static/images/Ellipse_top.png");
+    background-image: url("/static/images/Ellipse_bottom.png"), url("/static/images/Ellipse_top.png");
     background-repeat: no-repeat, no-repeat;
     background-position: right bottom, left top;
 }
@@ -209,21 +221,26 @@ a.sectionCard-Button {
 
 .sectionCard-Button {
     text-align: center;
-    border-radius: 4px; 
+    border-radius: 4px;
     width: 100%;
     color: white;
     padding: 10px 24px;
     margin-top: 48px;
 }
+
 .ourPromice {
     padding-top: 48px;
 }
+
 .ourPromice h2 {
     margin-bottom: 48px;
 }
-.ourProcess, .ourProcess h2 + p {
+
+.ourProcess,
+.ourProcess h2+p {
     padding-bottom: 48px;
 }
+
 .testimonials {
     background-color: var(--color-grey-100);
 }
@@ -231,14 +248,17 @@ a.sectionCard-Button {
 .testimonials h2 {
     text-align: center;
 }
+
 .subheader {
     text-align: center;
     margin-bottom: 45px;
 }
+
 .testimonials a.sectionCard-Button--Green img {
     vertical-align: middle;
     margin-left: 8px;
 }
+
 .sectionCard-Button--Orange {
     background-color: var(--color-bold-orange);
 }
@@ -250,6 +270,7 @@ a.sectionCard-Button {
 .footerSection {
     padding: 32px 16px;
 }
+
 .footerSection-navigation p {
     margin-bottom: 24px;
     font-size: 3rem;
@@ -257,9 +278,11 @@ a.sectionCard-Button {
     font-weight: 600;
     line-height: normal;
 }
+
 .footerSection-navigation ul li {
     margin-top: 16px;
 }
+
 .footer-bottom {
     margin-top: 32px;
 }
@@ -278,6 +301,7 @@ a.sectionCard-Button {
     letter-spacing: -1.92px;
     margin-bottom: 24px;
 }
+
 .heading-orange {
     color: var(--color-bold-orange);
 }
@@ -295,9 +319,11 @@ a.sectionCard-Button {
 .mostRecovered {
     margin-top: 48px;
 }
+
 .sectionCard-largeParagraph {
     margin-top: 32px;
 }
+
 .whiteCard-stars {
     margin-bottom: 24px;
 }
@@ -311,10 +337,12 @@ a.sectionCard-Button {
     color: white;
     padding: 32px 24px;
 }
+
 .getInTouch {
     background-position: 0 325px, 0 -290px;
     color: var(--color-grey-300);
 }
+
 .getInTouch h2 {
     font-size: 3.7rem;
     font-weight: 600;
@@ -322,30 +350,36 @@ a.sectionCard-Button {
     color: white;
     margin-bottom: 16px;
 }
+
 .getInTouch .contactFace {
     border-radius: 8px;
     margin-bottom: 32px;
 }
+
 .getInTouch ul li img {
     margin-right: 10px;
     vertical-align: middle;
 }
+
 .getInTouch p {
     font-size: 2.1rem;
     font-weight: 400;
     line-height: 32px;
 }
+
 .getInTouch ul li {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 32px;
     margin-top: 24px;
 }
-.blog h2, .blog .subheader{
+
+.blog h2,
+.blog .subheader {
     text-align: center;
 }
 
-.startNow .startNow-text{
+.startNow .startNow-text {
     color: var(--color-dark-blue-faded);
     font-size: 1.8rem;
     font-style: normal;
@@ -353,12 +387,13 @@ a.sectionCard-Button {
     line-height: 26px;
     margin-bottom: 32px;
 }
+
 .startNow ul li {
     color: var(--color-dark-blue-faded);
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 26px; 
+    line-height: 26px;
     margin-top: 16px;
 }
 
@@ -377,19 +412,24 @@ a.sectionCard-Button {
     border-radius: 8px;
     padding: 16px 6px;
 }
+
 .faq li {
     margin-top: 32px;
 }
+
 .faq h2 {
     text-align: center;
 }
+
 .usefulLinks li {
     color: var(--color-grey-600);
     margin-right: 16px;
 }
+
 .footerSection-navigation-list li {
     color: var(--color-grey-600);
 }
+
 .footer-sponsors li:first-child {
     margin-right: 40px;
 }
@@ -398,15 +438,19 @@ a.sectionCard-Button {
     margin: 24px 0;
     color: var(--color-grey-400)
 }
+
 .heroImg {
     margin: 21px 50px;
 }
+
 .top-sponsors li {
     margin-top: 12px;
 }
+
 .top-sponsors li:first-child {
     margin-top: 0;
 }
+
 .u-hidden {
     display: none;
 }
@@ -416,30 +460,38 @@ a.sectionCard-Button {
     background-color: var(--color-light-blue);
     border-radius: 8px;
 }
+
 .cardList-blackCard p {
     margin-top: 12px;
 }
+
 .cardList-blackCard h3 {
     margin-top: 24px;
 }
+
 .cardList-transparentCard {
     margin-top: 24px;
 }
+
 .cardList-transparentCard p {
     margin-top: 12px;
 }
+
 .cardList-whiteCard {
-    border-radius: 8px; 
+    border-radius: 8px;
     padding: 24px;
     background-color: white;
 }
+
 .cardList-whiteCard ul {
     margin-bottom: 24px;
 }
+
 .cardList-whiteCard .whiteCard-text {
     margin-bottom: 20px;
     color: var(--color-grey-500);
 }
+
 .cardList-whiteCard .whiteCard-author {
     font-size: 1.8rem;
     font-style: normal;
@@ -461,10 +513,11 @@ ul li {
     text-indent: 0;
     list-style-type: none;
 }
+
 .u-inline li {
     display: inline;
 }
 
-.cardList li{
+.cardList li {
     margin-top: 24px;
 }
