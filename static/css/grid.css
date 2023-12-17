@@ -1,0 +1,135 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.wrapper,
+.sectionCard,
+.footerSection {
+    max-width: 720px;
+}
+
+.sectionCard {
+    margin: 15px auto;
+}
+
+.gPaint {
+    overflow: hidden;
+    border-radius: 10px;
+    display: grid;
+    width: 300px;
+    margin: 0 auto;
+    min-height: 300px;
+    grid-template-columns: repeat(4, 1fr) 0.5fr;
+    grid-template-rows: repeat(5, 1fr) 0.5fr;
+    grid-auto-flow: row;
+    box-shadow: #000 6px 6px 15px;
+}
+
+.gPaint-item {
+    border: 3px solid #000;
+}
+
+.item--red {
+    background-color: red;
+}
+
+.item--black {
+    background-color: black;
+}
+
+.item--yellow {
+    background-color: yellow;
+}
+
+.item--blue {
+    background-color: rgb(49, 84, 199);
+}
+
+.item--spanR {
+    grid-row-start: span 2;
+}
+
+.item--spanC {
+    grid-column-start: span 2;
+}
+
+.item--spanC3 {
+    grid-column-start: span 3;
+}
+
+.item--cltop {
+    border-top: none;
+}
+
+.item--clleft {
+    border-left: none;
+}
+
+.item--clright {
+    border-right: none;
+}
+
+.item--clbottom {
+    border-bottom: none;
+}
+
+.item--strL {
+    border-left-width: 6px;
+}
+
+.gDash {
+    display: grid;
+    width: 500px;
+    margin: 0 auto;
+    grid-template-areas:
+        "bp ct"
+        "bp ct"
+        "bp ct";
+    grid-template-columns: 1fr 6fr;
+    border: 2px solid #4f6da3;
+}
+
+.gDash-side {
+    grid-area: bp;
+}
+
+.gDash-content {
+    border-left: 2px solid #4f6da3;
+    padding: 10px;
+    grid-gap: 10px;
+    display: grid;
+    grid-area: ct;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, min-content);
+}
+
+.gDash-item1 {
+    grid-column-start: span 6;
+}
+
+.gDash-content img {
+    border: 2px solid #4f6da3;
+    border-radius: 4px;
+}
+
+.gGallery {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.gGallery-item {
+    margin: 3px;
+    background-color: #4f6da3;
+    border: 2px solid #c5969e;
+    border-radius: 5px;
+    height: 100px;
+    display: grid;
+    place-items: center;
+}
