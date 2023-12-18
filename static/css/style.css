@@ -385,16 +385,17 @@ div.menu {
 .getInTouch,
 .contactForm {
     border-radius: 8px;
-    margin-top: 60px;
-    margin-bottom: 60px;
     background-color: var(--color-dark-blue);
-    color: white;
     padding: 32px 24px;
 }
 
 .getInTouch {
     background-position: right -420px bottom -608px, left -422px top -662px;
-    color: var(--color-grey-300);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 32px;
 }
 
 .getInTouch h2 {
@@ -405,27 +406,32 @@ div.menu {
     margin-bottom: 16px;
 }
 
-.getInTouch .contactFace {
-    border-radius: 8px;
-    margin-bottom: 32px;
-}
-
 .getInTouch ul li img {
     margin-right: 10px;
     vertical-align: middle;
 }
 
 .getInTouch p {
+    color: var(--color-grey-300);
     font-size: 2.1rem;
     font-weight: 400;
     line-height: 32px;
 }
+.contactFace {
+    border-radius: 8px; 
+}
 
 .getInTouch ul li {
+    color: var(--color-grey-300);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 32px;
     margin-top: 24px;
+    margin-right: 24px;
+}
+.getInTouch ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .blog h2,
@@ -497,7 +503,8 @@ div.menu {
     margin-right: 16px;
 }
 
-.footerSection-navigation-list li {
+
+.footer-navItem {
     color: var(--color-grey-600);
 }
 
@@ -549,6 +556,9 @@ div.menu {
 
 .topSponsors li {
     display: flex;
+}
+.social li {
+    margin-left: 24px;
 }
 
 .u-hidden {
@@ -631,6 +641,25 @@ ul li {
 
 
 @media screen and (min-width: 960px) {
+    /* 
+        Moblie breakpoint
+    */
+    .trustpilot {
+        margin: 0;
+    }
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-navItem {
+        display: inline-block;
+        margin-right: 32px;
+    }
+    .navigation-head {
+        display: block;
+        margin-bottom: 24px;
+    }
     .wrapper,
     .sectionCard,
     .footerSection {
@@ -655,15 +684,19 @@ ul li {
         width: 626px;
         margin: 0 auto;
     }
-}
-@media screen and (max-width: 1220px) {
-    .u-mobile {
-        display: none;
+    .getInTouch {
+        padding: 60px;
     }
-}
-@media screen and (min-width: 1220px) {
-    .hamburger {
-        display: none;
+    .contactFace {
+        width: 220px;
+    }
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cardList {
+        margin-top: 60px;
     }
 }
 
@@ -673,9 +706,6 @@ ul li {
     }
     .heroWrapper .sectionCard {
         max-width: 720px;
-    }
-    .cardList {
-        margin-top: 60px;
     }
     /* 
         Approximation without clipping on lager sizes
@@ -690,10 +720,13 @@ ul li {
     .sectionCard--hasBothEllipce {
         background-position: calc(50vw - 800px) -213px, calc(50vw + 228px) 128px;
     }
+    .getInTouch {
+        background-position: right -231px bottom -554px, left -230px top -554px;
+    }
 }
 @media screen and (min-width: 1320px) {
     /* 
-        Mobile margin
+        Image desktop resize
     */
     .aboutUsContentWrapper {
         margin-left: 60px;
@@ -703,5 +736,16 @@ ul li {
     }
     .heroImg {
         padding: 39px 118px 66px 65px;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+    .u-desktop {
+        display: none;
+    }
+}
+@media screen and (min-width: 1221px) {
+    .u-mobile {
+        display: none;
     }
 }
