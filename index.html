@@ -106,14 +106,13 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="topSponsorsSection">
             <div class="sectionCard sectionCard--small">
                 <h2 class="u-hidden">
                     Our sponsors
                 </h2>
                 <ul class="topSponsors">
                     <li>
-
                         <img src="./static/images/logo-finanzen.svg" alt="">
                     </li>
                     <li>
@@ -141,7 +140,7 @@
                 <h2>
                     Why ReWallet?
                 </h2>
-                <p>
+                <p class="whyText">
                     We had the same problem as you. After countless all-nighters and a lot of lost nerves, we were
                     finally
                     able to recover our wallets. Since then, we can offer our experience, know-how and toolkit to
@@ -190,30 +189,39 @@
             </div>
         </section>
         <section>
-            <div class="sectionCard">
-                <img src="" alt="">
-                <h2>
-                    About us:
-                    Our Story and Mission
-                </h2>
-                <p class="sectionCard-largeParagraph">
-                    We explored various aspects of cryptocurrencies, including using Bitcoin for payments, mining, and
-                    trading with different strategies. We also considered starting a company and extensively researched
-                    Ethereum and smart contracts. However, we struggled to find a viable business model. Concerns about
-                    government intervention and the potential ban of Bitcoin always lingered. As a result, we pursued
-                    other entrepreneurial ventures and found some validation when the ICO wave ended with a crash.
-                </p>
-                <p class="sectionCard-largeParagraph">
-                    The positive developments in 2020 took us by surprise. The influx of capital from established
-                    institutions, including the financial industry, made it increasingly challenging for the government
-                    to ban Bitcoin. However, we acknowledge that they may still attempt to do so. Recently, when we
-                    attempted to transfer our old, now more valuable Bitcoin and Ether to a new wallet, we discovered
-                    that we had lost access to them completely. We were unable to locate our wallets in the first place.
-                </p>
-                <a class="external-anchor" href="">
-                    Read more
-                    <img src="./static/images/arrow_down.svg" alt="arrow down orange">
-                </a>
+            <div class="aboutUsSection sectionCard">
+                <div class="aboutUsContentWrapper">
+                    <img src="" alt="">
+                    <h2>
+                        About us:
+                        Our Story and Mission
+                    </h2>
+                    <p class="sectionCard-largeParagraph">
+                        We explored various aspects of cryptocurrencies, including using Bitcoin for payments, mining,
+                        and
+                        trading with different strategies. We also considered starting a company and extensively
+                        researched
+                        Ethereum and smart contracts. However, we struggled to find a viable business model. Concerns
+                        about
+                        government intervention and the potential ban of Bitcoin always lingered. As a result, we
+                        pursued
+                        other entrepreneurial ventures and found some validation when the ICO wave ended with a crash.
+                    </p>
+                    <p class="sectionCard-largeParagraph">
+                        The positive developments in 2020 took us by surprise. The influx of capital from established
+                        institutions, including the financial industry, made it increasingly challenging for the
+                        government
+                        to ban Bitcoin. However, we acknowledge that they may still attempt to do so. Recently, when we
+                        attempted to transfer our old, now more valuable Bitcoin and Ether to a new wallet, we
+                        discovered
+                        that we had lost access to them completely. We were unable to locate our wallets in the first
+                        place.
+                    </p>
+                    <a class="external-anchor" href="">
+                        Read more
+                        <img src="./static/images/arrow_down.svg" alt="arrow down orange">
+                    </a>
+                </div>
                 <img class="aboutUsImage" src="./static/images/aboutusimg.svg" alt="">
             </div>
         </section>
@@ -315,8 +323,8 @@
                 </button>
             </div>
         </section>
-        <section>
-            <div class="testimonials sectionCard">
+        <section class="testimonials">
+            <div class="sectionCard">
                 <img src="" alt="">
                 <h2>
                     Testimonials
@@ -385,9 +393,15 @@
                 </p>
 
                 <ul class="cardList">
-                    <li>
+                    <li class="card">
                         <article class="articleItem">
-                            <img class="articleItem-image" src="./static/images/ethereum-presale-wallet.jpg" alt="">
+                            <picture>
+                                <source class="articleItem-image"
+                                    srcset="/static/images/ethereum-presale-wallet-huge.jpg"
+                                    media="(min-width: 550px)" />
+                                <img class="articleItem-image" src="./static/images/ethereum-presale-wallet.jpg"
+                                    alt="" />
+                            </picture>
                             <div class="article-dateContainer">
                                 <div class="article-authorContainer">
                                     <img class="articleItem-avatar" src="./static/images/av1.jpg" alt="">
@@ -403,9 +417,14 @@
                             </a>
                         </article>
                     </li>
-                    <li>
+                    <li class="card">
                         <article class="articleItem">
-                            <img class="articleItem-image" src="./static/images/lost_pass.jpg" alt="">
+                            <picture>
+                                <source class="articleItem-image"
+                                    srcset="/static/images/lost_pass-huge.jpg"
+                                    media="(min-width: 550px)" />
+                                <img class="articleItem-image" src="./static/images/lost_pass.jpg" alt="">
+                            </picture>
                             <div class="article-dateContainer">
                                 <div class="article-authorContainer">
                                     <img class="articleItem-avatar" src="./static/images/av1.jpg" alt="">
@@ -421,9 +440,14 @@
                             </a>
                         </article>
                     </li>
-                    <li>
+                    <li class="card">
                         <article class="articleItem">
-                            <img class="articleItem-image" src="./static/images/you_ill.jpg" alt="">
+                            <picture>
+                                <source class="articleItem-image"
+                                    srcset="/static/images/you_ill-huge.jpg"
+                                    media="(min-width: 550px)" />
+                                <img class="articleItem-image" src="./static/images/you_ill.jpg" alt="">
+                            </picture>
                             <div class="article-dateContainer">
                                 <div class="article-authorContainer">
                                     <img class="articleItem-avatar" src="./static/images/av2.jpg" alt="">
@@ -446,8 +470,8 @@
                 </a>
             </div>
         </section>
-        <section>
-            <div class="faqSection sectionCard">
+        <section class="faqSection">
+            <div class="sectionCard">
                 <img src="" alt="">
                 <h2>
                     Frequently asked questions
