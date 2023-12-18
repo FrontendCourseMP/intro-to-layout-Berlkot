@@ -81,12 +81,14 @@ h3 {
     line-height: 30px;
     font-weight: 600;
 }
+
 summary {
     cursor: pointer;
     list-style: none;
     font-size: 2.3rem;
     font-weight: 500;
     line-height: 32px;
+    margin-bottom: 8px;
 }
 
 button,
@@ -103,7 +105,23 @@ input[type=button] {
 h2+p {
     margin-top: 16px;
 }
+nav ul li{
+    margin-left: 32px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
 
+.startNowButton {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 10px 24px;
+    border: 2px solid var(--color-dark-blue);
+    border-radius: 4px;
+    margin-left: 32px;
+}
 .checkmarkList li {
     background: url("/static/images/check-circle.svg") left top no-repeat;
     padding-left: 37px
@@ -123,8 +141,9 @@ h2+p {
     flex-direction: row;
     align-items: center;
     gap: 12px;
-    
+
 }
+
 .articleItem-href {
     display: flex;
     flex-direction: row;
@@ -169,7 +188,7 @@ h2+p {
 .wrapper,
 .sectionCard,
 .footerSection {
-    max-width: 390px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -215,36 +234,33 @@ h2+p {
 }
 
 .sectionCard--hasTopEllipce {
-    background-image: url("/static/images/Ellipse_top.png");
+    background-image: url("/static/images/Ellipse.png");
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: left -426px top -312px;
 }
 
 .sectionCard--hasBottomEllipce {
-    background-image: url("/static/images/Ellipse_bottom.png");
+    background-image: url("/static/images/Ellipse.png");
     background-repeat: no-repeat;
-    background-position: right bottom;
+    background-position: right -426px bottom -312px;
 }
 
 .sectionCard--hasBothEllipce {
-    background-image: url("/static/images/Ellipse_bottom.png"), url("/static/images/Ellipse_top.png");
+    background-image: url("/static/images/Ellipse.png"), url("/static/images/Ellipse.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: right bottom, left top;
-}
-
-
-
-a.sectionCard-Button {
-    display: block;
+    background-position: right -426px bottom -328px, left -426px top -312px;
 }
 
 .sectionCard-Button {
+    display: block;
     text-align: center;
     border-radius: 4px;
     width: 100%;
     color: white;
     padding: 10px 24px;
     margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 28px;
@@ -334,15 +350,21 @@ a.sectionCard-Button {
     padding: 10px 24px;
 }
 
-.menu {
-    padding: 18px 16px;
+/* Из-за более высокой специфичности */
+div.menu {
+    padding-top: 18px;
+    padding-bottom: 18px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
+.buttonWrapper {
+    display: flex;
+}
 .mostRecovered {
     margin-top: 48px;
 }
+
 .mostRecovered ul {
     display: flex;
     flex-wrap: wrap;
@@ -370,7 +392,7 @@ a.sectionCard-Button {
 }
 
 .getInTouch {
-    background-position: 0 325px, 0 -290px;
+    background-position: right -420px bottom -608px, left -422px top -662px;
     color: var(--color-grey-300);
 }
 
@@ -443,21 +465,26 @@ a.sectionCard-Button {
     border-radius: 8px;
     padding: 16px 6px;
 }
-
-.faq li {
+.faqSection--faq {
+    max-width: 780px;
+    margin: 0 auto;
+}
+.faqSection--faq li {
     margin-top: 32px;
     display: flex;
     justify-content: space-between;
 }
-.faq svg {
+
+.faqSection--faq svg {
     margin-left: 24px;
     min-width: max-content;
 }
-[open] + svg path {
+
+[open]+svg path {
     d: path("M8 12.5H16M22 12.5C22 18.0228 17.5228 22.5 12 22.5C6.47715 22.5 2 18.0228 2 12.5C2 6.97715 6.47715 2.5 12 2.5C17.5228 2.5 22 6.97715 22 12.5Z");
 }
 
-.faq h2 {
+.faqSection h2 {
     text-align: center;
 }
 
@@ -480,7 +507,23 @@ a.sectionCard-Button {
 }
 
 .heroImg {
-    margin: 21px 50px;
+    padding: 21px 49px 35px 50px;
+    flex: 1;
+    max-width: 720px;
+    margin: 0 auto;
+}
+.heroImg img {
+    width: 100%;
+    object-fit: contain;
+}
+.heroWrapper {
+    flex-direction: column;
+    max-width: 1440px;
+    display: flex;
+    margin: 0 auto;
+}
+.heroWrapper .sectionCard {
+    margin: unset;
 }
 .topSponsors {
     display: flex;
@@ -489,15 +532,23 @@ a.sectionCard-Button {
     row-gap: 12px;
 
 }
+
 .topSponsors li {
     display: flex;
 }
+
 .u-hidden {
     display: none;
 }
+
 .cardList {
+    margin-top: 24px;
     display: flex;
     flex-wrap: wrap;
+    grid-gap: 24px;
+}
+.card {
+    flex: 1; 
 }
 
 .cardList-blackCard {
@@ -563,6 +614,59 @@ ul li {
     display: inline;
 }
 
-.cardList li {
-    margin-top: 24px;
+
+@media screen and (min-width: 960px) {
+    .wrapper,
+    .sectionCard,
+    .footerSection {
+        padding: 0 80px;
+    }
+    .sectionCard {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .sectionCard--small {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .sectionCard-Button {
+        width: max-content;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .u-mobile {
+        display: none;
+    }
+}
+@media screen and (min-width: 1220px) {
+    .hamburger {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .heroWrapper {
+        flex-direction: row;
+    }
+    .heroWrapper .sectionCard {
+        max-width: 720px;
+    }
+    /* 
+        Approximation without clipping on lager sizes
+        Using this in small width result in borked effect
+    */
+    .sectionCard--hasTopEllipce {
+        background-position: calc(50vw - 800px) -213px;
+    }
+    .sectionCard--hasBottomEllipce {
+        background-position: calc(50vw + 228px) 128px;
+    }
+    .sectionCard--hasBothEllipce {
+        background-position: calc(50vw - 800px) -213px, calc(50vw + 228px) 128px;
+    }
+}
+@media screen and (min-width: 1320px) {
+    .heroImg {
+        padding: 39px 118px 66px 65px;
+    }
 }

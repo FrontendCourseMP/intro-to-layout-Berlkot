@@ -14,9 +14,9 @@
         <div class="menu wrapper">
             <nav>
                 <a href="./index.html">
-                    <img src="./static/images/ReWallet.svg" alt="Menu hamburger">
+                    <img src="./static/images/ReWallet.svg" alt="Rewallet logo">
                 </a>
-                <ul class="u-hidden">
+                <ul class="u-mobile u-inline">
                     <li>
                         <a href="">Why ReWallet?</a>
                     </li>
@@ -37,65 +37,75 @@
                     </li>
                 </ul>
             </nav>
-            <button>
+            <button class="hamburger">
                 <img src="./static/images/burger.svg" alt="">
             </button>
+            <div class="u-mobile buttonWrapper">
+                <button>
+                    <img src="./static/images/language.svg" alt="">
+                </button>
+                <button class="startNowButton">
+                    Start Now
+                </button>
+            </div>
         </div>
     </header>
     <main>
         <h1 class="u-hidden">ReWallet - a way to restore your crypto wallet</h1>
         <section>
-            <div class="sectionCard sectionCard--small">
-                <h2 class="u-hidden">
-                    Introduction
-                </h2>
-                <p class="heading">
-                    Regain access
-                    to your <span class="heading-orange">crypto wallet</span>
-                </p>
-                <p>
-                    You've lost access to your crypto wallet? Then you've come to the right place. We can help you
-                    recover
-                    your wallet - quickly, easily and on a pure success basis. You don't pay anything until you have
-                    access
-                    to your wallet again.
-                </p>
-                <button class="sectionCard-Button sectionCard-Button--Orange">
-                    Unlock your Wallet now
-                </button>
-                <div class="mostRecovered">
-                    <p>
-                        Our most recovered wallets:
+            <div class="heroWrapper">
+                <div class="sectionCard sectionCard--small">
+                    <h2 class="u-hidden">
+                        Introduction
+                    </h2>
+                    <p class="heading">
+                        Regain access
+                        to your <span class="heading-orange">crypto wallet</span>
                     </p>
-                    <ul>
-                        <li>
-                            <img src="./static/images/wal1.svg" alt="Ledger Nano S">
-                        </li>
-                        <li>
-                            <img src="./static/images/wal2.svg" alt="Trezor Wallet">
-                        </li>
-                        <li>
-                            <img src="./static/images/wal3.svg" alt="Blockchain.com">
-                        </li>
-                        <li>
-                            <img src="./static/images/wal4.svg" alt="Electrum Wallet">
-                        </li>
-                        <li>
-                            <img src="./static/images/wal5.png" alt="Multibit Wallet">
-                        </li>
-                        <li>
-                            <img src="./static/images/wal6.svg" alt="Bitcoin core">
-                        </li>
-                    </ul>
                     <p>
-                        and many others.
+                        You've lost access to your crypto wallet? Then you've come to the right place. We can help you
+                        recover
+                        your wallet - quickly, easily and on a pure success basis. You don't pay anything until you have
+                        access
+                        to your wallet again.
                     </p>
+                    <button class="sectionCard-Button sectionCard-Button--Orange">
+                        Unlock your Wallet now
+                    </button>
+                    <div class="mostRecovered">
+                        <p>
+                            Our most recovered wallets:
+                        </p>
+                        <ul>
+                            <li>
+                                <img src="./static/images/wal1.svg" alt="Ledger Nano S">
+                            </li>
+                            <li>
+                                <img src="./static/images/wal2.svg" alt="Trezor Wallet">
+                            </li>
+                            <li>
+                                <img src="./static/images/wal3.svg" alt="Blockchain.com">
+                            </li>
+                            <li>
+                                <img src="./static/images/wal4.svg" alt="Electrum Wallet">
+                            </li>
+                            <li>
+                                <img src="./static/images/wal5.png" alt="Multibit Wallet">
+                            </li>
+                            <li>
+                                <img src="./static/images/wal6.svg" alt="Bitcoin core">
+                            </li>
+                        </ul>
+                        <p>
+                            and many others.
+                        </p>
+                    </div>
+                </div>
+                <div class="heroImg">
+                    <img src="./static/images/hero_img.svg" alt="">
                 </div>
             </div>
         </section>
-        <div class="wrapper">
-            <img class="heroImg" src="./static/images/hero_img.svg" alt="">
-        </div>
         <section>
             <div class="sectionCard sectionCard--small">
                 <h2 class="u-hidden">
@@ -125,8 +135,8 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <div class="sectionCard sectionCard--Dark sectionCard--hasBothEllipce">
+        <section class="sectionCard--Dark sectionCard--hasBothEllipce">
+            <div class="sectionCard">
                 <img src="" alt="">
                 <h2>
                     Why ReWallet?
@@ -141,7 +151,7 @@
                 </p>
 
                 <ul class="cardList">
-                    <li class="cardList-blackCard">
+                    <li class="card cardList-blackCard">
                         <img src="./static/images/settings-01.svg" alt="Rewallet why toolkit icon">
                         <h3>
                             Toolkit
@@ -152,7 +162,7 @@
                             that enables us to recover crypto wallets in a few steps.
                         </p>
                     </li>
-                    <li class="cardList-blackCard">
+                    <li class="card cardList-blackCard">
                         <img src="./static/images/briefcase-02.svg" alt="Rewallet why experience icon">
                         <h3>
                             Experience
@@ -162,7 +172,7 @@
                             clients recover their wallets.
                         </p>
                     </li>
-                    <li class="cardList-blackCard">
+                    <li class="card cardList-blackCard">
                         <img src="./static/images/shield-tick.svg" alt="Rewallet why trust icon">
                         <h3>
                             Trust
@@ -207,8 +217,8 @@
                 <img class="aboutUsImage" src="./static/images/aboutusimg.svg" alt="">
             </div>
         </section>
-        <section>
-            <div class="ourProcess sectionCard sectionCard--Dark sectionCard--hasTopEllipce">
+        <section class="sectionCard--Dark sectionCard--hasTopEllipce">
+            <div class="ourProcess sectionCard">
                 <img src="" alt="">
                 <h2>
                     Our process
@@ -218,7 +228,7 @@
                 </p>
 
                 <ol class="cardList enumaratedCardList">
-                    <li class="cardList-transparentCard">
+                    <li class="card cardList-transparentCard">
                         <h3>
                             Fill out our questionnaire
                         </h3>
@@ -228,7 +238,7 @@
                             first important information.
                         </p>
                     </li>
-                    <li class="cardList-transparentCard">
+                    <li class="card cardList-transparentCard">
                         <h3>
                             We check your request
                         </h3>
@@ -238,7 +248,7 @@
                             back to you with our assessment within 24 hours.
                         </p>
                     </li>
-                    <li class="cardList-transparentCard">
+                    <li class="card cardList-transparentCard">
                         <h3>
                             We send you the contract
                         </h3>
@@ -248,7 +258,7 @@
                             the other information we need for our work.
                         </p>
                     </li>
-                    <li class="cardList-transparentCard">
+                    <li class="card cardList-transparentCard">
                         <h3>
                             We get to work
                         </h3>
@@ -261,14 +271,14 @@
                 </ol>
             </div>
         </section>
-        <section>
-            <div class="ourPromice sectionCard sectionCard--Dark sectionCard--hasBottomEllipce">
+        <section class="sectionCard--Dark sectionCard--hasBottomEllipce">
+            <div class="ourPromice sectionCard">
                 <img src="" alt="">
                 <h2>
                     Our promise to you
                 </h2>
                 <ul class="cardList">
-                    <li class="cardList-blackCard">
+                    <li class="card cardList-blackCard">
                         <img src="./static/images/rocket.svg" alt="">
                         <h3 class="blackCad-topElement">
                             Speed
@@ -279,7 +289,7 @@
                             have your wallet restored after a couple of days.
                         </p>
                     </li>
-                    <li class="cardList-blackCard">
+                    <li class="card cardList-blackCard">
                         <img src="./static/images/wallet.svg" alt="">
                         <h3 class="blackCad-topElement">
                             Success-based commission
@@ -290,7 +300,7 @@
                             successful recovery, we charge a commission of 20% of your wallet.
                         </p>
                     </li>
-                    <li class="cardList-blackCard">
+                    <li class="card cardList-blackCard">
                         <img src="./static/images/settings-01.svg" alt="">
                         <h3 class="blackCad-topElement">
                             Service
@@ -316,7 +326,7 @@
                 </p>
 
                 <ul class="cardList">
-                    <li class="cardList-whiteCard">
+                    <li class="card cardList-whiteCard">
                         <img class="whiteCard-stars" src="./static/images/stars-5 1.svg" alt="">
                         <p class="whiteCard-text">
                             By a stupid mistake, I wrote down only 11 of 12 words of my seed phrase. Desperately I tried
@@ -337,7 +347,7 @@
                             Kai Olaf W.
                         </p>
                     </li>
-                    <li class="cardList-whiteCard">
+                    <li class="card cardList-whiteCard">
                         <img class="whiteCard-stars" src="./static/images/stars-5 1.svg" alt="">
                         <p class="whiteCard-text ">
                             I had pretty much written off my lost wallet until I came across ReWallet in forums. The
@@ -437,12 +447,12 @@
             </div>
         </section>
         <section>
-            <div class="faq sectionCard">
+            <div class="faqSection sectionCard">
                 <img src="" alt="">
                 <h2>
                     Frequently asked questions
                 </h2>
-                <ul>
+                <ul class="faqSection--faq">
                     <li>
                         <details>
                             <summary>
