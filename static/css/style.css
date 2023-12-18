@@ -666,7 +666,7 @@ ul li {
         
     }
     .formButton {
-        margin-top: none;
+        margin-top: 0;
     }
     .startNow {
         flex-direction: row;
