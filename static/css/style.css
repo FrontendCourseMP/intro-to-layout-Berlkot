@@ -633,6 +633,12 @@ div.menu {
     font-weight: 600;
     line-height: 26px;
 }
+.articleList {
+    justify-content: center;
+}
+.articleList li {
+    flex: 0;
+}
 
 ol,
 ol li {
