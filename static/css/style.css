@@ -658,6 +658,11 @@ ul li {
     /* 
         Moblie breakpoint
     */
+    .enumaratedCardList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
     .formContainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
