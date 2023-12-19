@@ -133,3 +133,11 @@ footer {
     display: grid;
     place-items: center;
 }
+.gGallery-item a {
+    grid-row: 1;
+    grid-column: 1;
+}
+.gGallery-item img {
+    grid-row: 1;
+    grid-column: 1;
+}

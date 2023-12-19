@@ -201,12 +201,12 @@ nav {
     padding: 0 16px;
 }
 
-.enumaratedCardList {
+.enumeratedCardList {
     counter-reset: listc;
 
 }
 
-.enumaratedCardList li::before {
+.enumeratedCardList li::before {
     display: inline-block;
     counter-increment: listc;
     content: "0" counter(listc);
@@ -689,7 +689,7 @@ ul li {
     /* 
         Moblie breakpoint
     */
-    .enumaratedCardList {
+    .enumeratedCardList {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -783,6 +783,9 @@ ul li {
 
     .cardList {
         margin-top: 60px;
+    }
+    .enumeratedCardList {
+        margin-top: 0px;
     }
 }
 
