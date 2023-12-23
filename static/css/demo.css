@@ -48,7 +48,7 @@
 
 .marquee-inf {
     margin: 50px auto;
-    max-width: 60%;
+    max-width: 457px;
     overflow: hidden;
 }
 
@@ -63,6 +63,6 @@
     }
 
     100% {
-        transform: translateX(-51.5%);
+        transform: translateX(-50%);
     }
 }
