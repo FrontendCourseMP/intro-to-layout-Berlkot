@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReWallet</title>
+    <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/form.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu wrapper">
+            <nav>
+                <a href="./index.html">
+                    <img src="./static/images/ReWallet.svg" alt="Rewallet logo">
+                </a>
+                <ul class="u-desktop u-inline">
+                    <li>
+                        <a href="">Why ReWallet?</a>
+                    </li>
+                    <li>
+                        <a href="">About us</a>
+                    </li>
+                    <li>
+                        <a href="">How does it work</a>
+                    </li>
+                    <li>
+                        <a href="">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="">Wallets</a>
+                    </li>
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="u-mobile">
+                <img src="./static/images/burger.svg" alt="">
+            </button>
+            <div class="u-desktop buttonWrapper">
+                <button>
+                    <img src="./static/images/language.svg" alt="">
+                </button>
+                <button class="startNowButton">
+                    Start Now
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class=" sectionCard--Dark">
+            <div class="sectionCard">
+                <!-- Stop firefox from yelling at me-->
+                <form action="https://httpbin.org/post" method="POST" enctype="application/x-www-form-urlencoded"
+                    name="register" class="registerForm">
+                    <p class="registerForm-header">Register</p>
+                    <fieldset class="registerForm-middle">
+                        <legend>Personal information</legend>
+                        <label for="username">
+                            Name
+                            <input id="username" type="text" maxlength="50" placeholder="Richard James" required
+                                name="username" />
+                        </label>
+                        <label for="password">
+                            Password
+                            <input id="password" type="password" minlength="4" required placeholder="***********"
+                                name="password" />
+                        </label>
+                        <label for="bdate">
+                            Date of birth
+                            <input id="bdate" type="date" required name="birth_date" />
+                        </label>
+                        <fieldset class="registerForm--gender">
+                            <legend>Gender</legend>
+                            <ul>
+                                <li>
+                                    <label for="Male" class="form--gender--label">
+                                        Male
+                                        <input id="Male" type="radio" name="gender" value="Male" />
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="Female" class="form--gender--label">
+                                        Female
+                                        <input id="Female" type="radio" name="gender" value="Female" />
+                                    </label>
+                                </li>
+                                <li>
+                                    <label for="not_set" class="form--gender--label">
+                                        Prefer not to say
+                                        <input id="not_set" type="radio" name="gender" value="not_set" />
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset class="registerForm-middle-centre">
+                        <legend>Your contacts</legend>
+                        <label for="email">
+                            Email
+                            <input name="email" id="email" type="email" required placeholder="team@rewallet.de" />
+                        </label>
+                        <label for="tel">
+                            Phone number
+                            <input type="tel" name="tel" id="tel" placeholder="+11 (111) 111 111"
+                                pattern="/^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/gm" />
+                                <!-- https://regex101.com/r/j48BZs/2 -->
+                        </label>
+                        <label for="time" title="Shift+click to select multiple" class="form--time">
+                            When to contact you
+                            <select name="time" id="time" multiple>
+                                <option value="morning">Morning</option>
+                                <option value="noon">Noon</option>
+                                <option value="evening">Evening</option>
+                                <option value="night">Night</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                    <fieldset class="registerForm-bot">
+                        <button type="submit" class="submit-btn">
+                            Register
+                        </button>
+                        <button type="reset" class="reset-btn">
+                            Reset form
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <section class=" sectionCard--Dark">
+            <div class="sectionCard">
+                <form action="" class="defenition-list">
+                    <fieldset>
+                        <legend>Псевдоэлементы/Псевдоклассы</legend>
+                        <dl>
+                            <dt>Псевдоэлемент</dt>
+                            <dd>
+                                Ключевое слово, добавляемое к селектору, которое позволяет
+                                стилизовать определённую часть выбранного элемента.
+                            </dd>
+                            <dt>Псевдокласс</dt>
+                            <dd>
+                                Селектор, который выбирает элементы, находящиеся в
+                                специфическом состоянии, например, они являются первым
+                                элементом своего типа, или на них наведён указатель мыши.
+                            </dd>
+                        </dl>
+                    </fieldset>
+                    <fieldset class="pseudo-elements">
+                        <legend>Псевдоэлементы</legend>
+                        <ul>
+                            <li>
+                                <label for="">
+                                    ::before
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    ::first-line
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    ::selection
+                                    <input type="checkbox" />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    ::first-letter
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    ::after
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    ::slotted
+                                    <input type="checkbox" />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    ::cue
+                                    <input type="checkbox" />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    ::backdrop
+                                    <input type="checkbox" />
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="pseudo-classes">
+                        <legend>Псевдоклассы</legend>
+                        <ul>
+                            <li>
+                                <label for="">
+                                    :has
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    :checked
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    :active
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    :hover
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    :not()
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    :link
+                                    <input type="checkbox" />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    :focus
+                                    <input type="checkbox" checked />
+                                </label>
+                            </li>
+                            <li>
+                                <label for="">
+                                    :only-of-type
+                                    <input type="checkbox" />
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerSection">
+            <div class="footer-top">
+                <div class="footerSection-navigation">
+                    <a class="navigation-head" href="/">
+                        <img src="/static/images/ReWallet.svg" alt="">
+                    </a>
+                    <ul class="footerSection-navigation-list">
+                        <li class="footer-navItem">
+                            <a href="./grid.html">Grid css</a>
+                        </li>
+                        <li class="footer-navItem">
+                            <a href="./form.html">Форма</a>
+                        </li>
+                        <li class="footer-navItem">
+                            <a href="">Why ReWallet?</a>
+                        </li>
+                        <li class="footer-navItem">
+                            <a href="">About us</a>
+                        </li>
+                        <li class="footer-navItem">
+                            <a href="">How does it work</a>
+                        </li>
+                        <li class="footer-navItem">
+                            <a href="">FAQ</a>
+                        </li>
+                        <li class="footer-navItem">
+                            <a href="">Wallets</a>
+                        </li>
+                        <li class="footer-navItem">
+                            <a href="">Blog</a>
+                        </li>
+                        <li class="footer-navItem u-desktop">
+                            <a href="">Imprint</a>
+                        </li>
+                        <li class="footer-navItem u-desktop">
+                            <a href="">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="trustpilot" src="./static/images/Trustpilot Rating.svg" alt="">
+            </div>
+            <div class="footer-bottom">
+                <ul class="footer-sponsors u-inline">
+                    <li> <!-- logos -->
+                        <img src="./static/images/pngaaa 1.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./static/images/Bundesblock_edited-1 1.png" alt="">
+                    </li>
+                </ul>
+                <p class="footer-copy">
+                    &copy; Copyright 2023 ReWallet
+                </p>
+                <ul class="usefulLinks u-inline u-mobile">
+                    <li>
+                        <a href="">Imprint</a>
+                    </li>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                </ul>
+                <ul class="social u-desktop u-inline">
+                    <li><a href=""><img src="./static/images/SM.svg" alt=""></a></li>
+                    <li><a href=""><img src="./static/images/SM(1).svg" alt=""></a></li>
+                    <li><a href=""><img src="./static/images/SM(2).svg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

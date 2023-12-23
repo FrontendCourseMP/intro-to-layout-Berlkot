@@ -1,0 +1,192 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+    padding-top: 50px;
+}
+
+.registerForm {
+    margin: 0 auto;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.registerForm fieldset legend {
+    font-size: 2rem;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.registerForm-header {
+    padding-top: 20px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.registerForm label {
+    display: block;
+}
+
+.registerForm label input {
+    width: 100%;
+    padding: 4px 10px;
+    margin: 8px 0;
+    
+    border-radius: 6px;
+}
+
+.registerForm label input::placeholder {
+    color: var(--color-grey-500);
+    font-size: 1.5rem;
+}
+
+.registerForm label select {
+    width: 100%;
+    margin: 8px 0;
+    overflow-y: hidden;
+    
+    border-radius: 6px;
+}
+
+.registerForm label select option {
+    padding: 0.5em 1em;
+    border-bottom: solid 1px var(--color-dark-blue);
+}
+
+.registerForm label select option:last-child {
+    border: none;
+}
+
+.registerForm--gender ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registerForm--gender label input {
+    width: auto;
+}
+.registerForm-bot {
+    display: flex;
+    justify-content: space-around;
+}
+.registerForm-bot .submit-btn {
+    font-size: 2rem;
+    display: block;
+    color: whitesmoke;
+    background-color: var(--color-bold-orange);
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+
+.registerForm-bot .reset-btn {
+    font-size: 2rem;
+    display: block;
+    color: var(--color-grey-300);
+    background-color: var(--color-dark-blue);
+}
+/* wait? firefox has has() selector disabled by default... it is exerimental?!?*/
+.registerForm label:has(input:required) {
+    position: relative;
+}
+
+.registerForm label:has(input:required)::after {
+    content: "Requred field";
+    color: var(--color-bold-orange);
+    position: absolute;
+    top: 10%;
+    right: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.registerForm label:has(input:required:valid)::after {
+    color: var(--color-bold-green);
+}
+
+.registerForm label input:required {
+    border: 2px solid var(--color-bold-orange);
+}
+
+.registerForm label input:focus {
+    border: 2px solid white;
+    outline: none;
+}
+
+.registerForm label:focus-within {
+    color: var(--color-bold-orange);
+}
+
+.navigation-head img {
+    rotate: 30deg;
+    scale: 1.5;
+    transform: skew(10);
+}
+.defenition-list fieldset legend {
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.defenition-list {
+    margin-top: 20px;
+    border-radius: 6px;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.defenition-list dt::first-letter {
+    font-size: 2rem;
+    color: var(--color-bold-orange);
+}
+
+.defenition-list dd {
+    position: relative;
+}
+
+.defenition-list dd::before {
+    content: "🛈  ";
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+.pseudo-elements label:has(input:checked),
+.pseudo-classes label:has(input:checked) {
+    text-decoration: line-through;
+}
+
+.pseudo-elements ul li:nth-of-type(2n),
+.pseudo-classes ul li:nth-of-type(2n) {
+    color: var(--color-bold-green);
+}
+
+.pseudo-elements ul li:nth-of-type(2n + 1),
+.pseudo-classes ul li:nth-of-type(2n + 1) {
+    color: var(--color-bold-orange);
+}
+
+.defenition-list label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.defenition-list label input[type="checkbox"] {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: var(--color-grey-300);
+}
+
+.defenition-list label input[type="checkbox"]:checked {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: var(--color-bold-green);
+    position: relative;
+}
